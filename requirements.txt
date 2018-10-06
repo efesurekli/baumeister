@@ -1,0 +1,3 @@
+pandas
+opencv-python
+python-pptx
