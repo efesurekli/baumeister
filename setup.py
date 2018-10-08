@@ -32,15 +32,17 @@ setup(name="baumeister",
       classifiers=[
           "Programming Language :: Python",
       ],
-      keywords="",  # FIXME: Add whatefer fits
+      keywords="",
       author="Baumeister Team",
       author_email="info@baumeister.ai",
       url="https://github.com/efesurekli/baumeister",
       license="GPLv3",
-      packages=find_packages(exclude=["contrib", "docs", "test"]),
+      packages=find_packages('src'),
+      package_dir={'': 'src'},
       include_package_data=True,
       zip_safe=False,
       install_requires=[
+        'pandas',
         'setuptools',
         'opencv-python',
         'python-pptx'
